@@ -49,6 +49,12 @@ echo "kernel.sched_autogroup_enabled=0" >> /etc/sysctl.conf
 #numactl --interleave = all /etc/init.d/postgresql start
 #echo "kernel.numa_balancing=0" >> /etc/sysctl.conf
 
+#POWER SAVING POLICY
+#посмотреть режим питания
+#cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+#для каждого процессора выпоняем ??? не работает после перезагрузки
+#echo performance >> /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+
 #vm.min_free_kbytes
 #отключить использование barrier для жестких дисков с бэкапом по питанию
 
