@@ -25,7 +25,7 @@ echo "vm.nr_hugepages=VALUE" >> /etc/sysctl.conf
 #в postgresql.conf включаем huge_pages=on
 #сведем к минимуму использование свопа
 echo "vm.swappiness=1" >> /etc/sysctl.conf
-#
+#режим строго выделения памяти
 echo "vm.overcommit_memory=2"
 #значение по умолчанию
 #echo "vm.overcommit_ratio=50" >> /etc/sysctl.conf
